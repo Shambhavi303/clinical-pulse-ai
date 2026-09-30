@@ -1,0 +1,31 @@
+sequenceDiagram
+    autonumber
+    actor Nurse as Triage Nurse
+    participant UI as ClinicalPulse CLI UI
+    participant Auth as AuthManager
+    participant PM as PatientManager
+    participant Val as ClinicalValidator
+    participant ML as MLTriageEngine
+    participant DB as JSON Database
+
+    Nurse->>UI: Input Credentials (username, password)
+    UI->>Auth: authenticate(username, password)
+    Auth-->>UI: Return AuthToken (Session Granted)
+
+    Nurse->>UI: Enter Patient Vitals & Demographics
+    UI->>Val: validate_vitals(vitals_dict)
+    Val-->>UI: Returns Validated Vitals
+
+    UI->>PM: create_patient(name, age, gender, complaint, vitals)
+    PM-->>UI: Returns PatientRecord
+
+    UI->>ML: predict_triage(age, vitals, complaint)
+    ML->>ML: Extract Symptom NLP Features
+    ML->>ML: RandomForest Inference & Red-Flag Override
+    ML-->>UI: Returns TriageAssessment (Category, Score, Flags)
+
+    UI->>PM: update_assessment(assessment)
+    PM->>DB: save_to_file(db.json)
+    DB-->>PM: Confirmation Saved
+
+    UI-->>Nurse: Display AI Triage Category & Risk Score

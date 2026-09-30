@@ -1,0 +1,48 @@
+graph TD
+    subgraph Client Layer
+        CLI["Interactive CLI Dashboard"]
+        NurseUI["Triage Intake Terminal"]
+        DocUI["Clinician Decision Support"]
+        AdminUI["Analytics Console"]
+    end
+
+    subgraph Security & Access Control
+        AuthMgr["AuthManager & Security Module"]
+        RBAC["Role-Based Access Control"]
+        Val["ClinicalValidator & Input Sanitizer"]
+    end
+
+    subgraph Core Business Logic
+        PM["PatientManager (CRUD Engine)"]
+        Queue["Priority Queue Manager"]
+        Analytics["AnalyticsEngine & Reporting"]
+    end
+
+    subgraph AI & Clinical Decision Engine
+        ML["MLTriageEngine (RandomForest Classifier)"]
+        NLP["Symptom NLP Phrase Extractor"]
+        Rules["Physiological Red-Flag Rule Engine"]
+    end
+
+    subgraph Storage & Export
+        DB[("JSON Persistent Database")]
+        CSV["CSV Export Engine"]
+        Log["Audit Logger"]
+    end
+
+    CLI --> AuthMgr
+    NurseUI --> Val
+    DocUI --> RBAC
+    AdminUI --> Analytics
+
+    AuthMgr --> RBAC
+    Val --> PM
+    PM --> ML
+    ML --> NLP
+    ML --> Rules
+    PM --> Queue
+    Analytics --> PM
+
+    PM --> DB
+    Analytics --> CSV
+    AuthMgr --> Log

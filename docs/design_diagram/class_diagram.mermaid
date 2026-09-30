@@ -1,0 +1,96 @@
+classDiagram
+    class UserRole {
+        <<enumeration>>
+        ADMIN
+        TRIAGE_NURSE
+        CLINICIAN
+    }
+
+    class UrgencyLevel {
+        <<enumeration>>
+        CATEGORY_1_RESUSCITATION
+        CATEGORY_2_EMERGENCY
+        CATEGORY_3_URGENT
+        CATEGORY_4_LESS_URGENT
+        CATEGORY_5_NON_URGENT
+    }
+
+    class User {
+        +str user_id
+        +str username
+        +UserRole role
+        +str salt
+        +str password_hash
+        +verify_password(password_raw) bool
+        +hash_password(password, salt) str
+    }
+
+    class VitalSigns {
+        +int heart_rate
+        +int systolic_bp
+        +int diastolic_bp
+        +float spo2
+        +float temp_c
+        +int resp_rate
+        +to_dict() dict
+    }
+
+    class TriageAssessment {
+        +UrgencyLevel urgency_level
+        +float composite_score
+        +float confidence_score
+        +List~str~ detected_red_flags
+        +str model_version
+        +to_dict() dict
+    }
+
+    class PatientRecord {
+        +str patient_id
+        +str name
+        +int age
+        +str gender
+        +str chief_complaint
+        +VitalSigns vitals
+        +TriageAssessment assessment
+        +str status
+        +update_assessment(assessment)
+    }
+
+    class AuthManager {
+        -dict _users
+        -dict _active_tokens
+        +register_user(username, password, role) User
+        +authenticate(username, password) AuthToken
+        +enforce_role(token, allowed_roles) AuthToken
+    }
+
+    class MLTriageEngine {
+        -RandomForestClassifier ml_classifier
+        +predict_triage(age, vitals, complaint) TriageAssessment
+        +evaluate_clinical_red_flags(vitals, complaint_flags) tuple
+        +extract_symptom_score(complaint) tuple
+    }
+
+    class PatientManager {
+        -dict _patients
+        +create_patient(name, age, gender, complaint, vitals) PatientRecord
+        +get_patient(patient_id) PatientRecord
+        +get_prioritized_queue() List~PatientRecord~
+        +save_to_file(path)
+    }
+
+    class AnalyticsEngine {
+        -PatientManager pm
+        +generate_department_summary() dict
+        +format_ascii_dashboard() str
+        +export_report_csv(path) str
+    }
+
+    User --> UserRole
+    PatientRecord *-- VitalSigns
+    PatientRecord o-- TriageAssessment
+    TriageAssessment --> UrgencyLevel
+    AnalyticsEngine --> PatientManager
+    PatientManager --> PatientRecord
+    MLTriageEngine ..> TriageAssessment
+    AuthManager --> User

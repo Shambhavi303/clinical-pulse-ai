@@ -1,0 +1,53 @@
+erDiagram
+    USERS {
+        string user_id PK
+        string username
+        string password_hash
+        string salt
+        string role
+        datetime created_at
+    }
+
+    PATIENT_ENCOUNTERS {
+        string patient_id PK
+        string name
+        int age
+        string gender
+        string chief_complaint
+        string status
+        string assigned_doctor FK
+        datetime created_at
+        datetime updated_at
+    }
+
+    VITAL_SIGNS {
+        string vital_id PK
+        string patient_id FK
+        int heart_rate
+        int systolic_bp
+        int diastolic_bp
+        float spo2
+        float temp_c
+        int resp_rate
+    }
+
+    TRIAGE_ASSESSMENTS {
+        string assessment_id PK
+        string patient_id FK
+        int urgency_level
+        float composite_score
+        float confidence_score
+        string model_version
+        datetime assessed_at
+    }
+
+    RED_FLAGS {
+        string flag_id PK
+        string assessment_id FK
+        string flag_description
+    }
+
+    USERS ||--o{ PATIENT_ENCOUNTERS : "assigned_doctor"
+    PATIENT_ENCOUNTERS ||--|| VITAL_SIGNS : "has_vitals"
+    PATIENT_ENCOUNTERS ||--o| TRIAGE_ASSESSMENTS : "evaluated_by"
+    TRIAGE_ASSESSMENTS ||--o{ RED_FLAGS : "contains_flags"

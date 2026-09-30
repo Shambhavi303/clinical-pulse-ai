@@ -1,0 +1,31 @@
+graph LR
+    actor Nurse as "Triage Nurse"
+    actor Doctor as "Clinician / Physician"
+    actor Admin as "System Administrator"
+
+    subgraph ClinicalPulse AI System
+        UC1("Authenticate & Session Login")
+        UC2("Input Patient Vitals & Demographics")
+        UC3("Predict Patient Urgency & Risk Score")
+        UC4("View Prioritized Emergency Queue")
+        UC5("Examine Patient & Update Status")
+        UC6("Generate Real-time Analytics Dashboard")
+        UC7("Export CSV/JSON Operational Reports")
+        UC8("Manage System Users & Roles")
+    end
+
+    Nurse --> UC1
+    Nurse --> UC2
+    Nurse --> UC3
+    Nurse --> UC4
+
+    Doctor --> UC1
+    Doctor --> UC4
+    Doctor --> UC5
+    Doctor --> UC6
+
+    Admin --> UC1
+    Admin --> UC4
+    Admin --> UC6
+    Admin --> UC7
+    Admin --> UC8

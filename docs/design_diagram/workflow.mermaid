@@ -1,0 +1,28 @@
+flowchart TD
+    Start([Patient Enters Emergency Department]) --> Step1[Nurse Intake: Record Demographics & Symptoms]
+    Step1 --> Step2[Measure Vital Signs: HR, BP, SpO2, Temp, RR]
+    Step2 --> Step3[Clinical Validator: Validate Data & Sanitize Inputs]
+    
+    Step3 -->|Validation Fails| FixData[Display Error Prompt to Nurse]
+    FixData --> Step2
+    
+    Step3 -->|Validation Passes| MLPredict[ML Engine: Feature Extraction & Model Inference]
+    MLPredict --> Rules[Clinical Red-Flag Rule Engine Evaluation]
+    
+    Rules --> CheckFlag{Red Flags Detected?}
+    CheckFlag -->|Critical Red Flag| Override[Assign Category 1: Resuscitation]
+    CheckFlag -->|No Critical Flag| CalculateScore[Compute Composite Risk Index 0-100]
+    
+    Override --> UpdateRecord[Update Patient Record & Risk Assessment]
+    CalculateScore --> UpdateRecord
+    
+    UpdateRecord --> PriorityQueue[Insert into Prioritized Queue sorted by Urgency & Risk]
+    PriorityQueue --> ClinicianAlert[Notify Clinician on Dashboard]
+    
+    ClinicianAlert --> Examine[Clinician Examines Top Priority Patient]
+    Examine --> Outcome{Clinical Outcome}
+    Outcome -->|Admit to ICU/Ward| StatusTreat[Update Status: In Treatment]
+    Outcome -->|Discharge| StatusDischarge[Update Status: Discharged]
+    
+    StatusTreat --> End([Encounter Completed])
+    StatusDischarge --> End
