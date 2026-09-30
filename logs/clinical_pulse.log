@@ -1,0 +1,268 @@
+[2026-09-30 19:03:24,532] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:24,534] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-BC03FA51 | Name: Alice
+[2026-09-30 19:03:24,542] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:24,542] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-B12BDB82 | Name: Bob
+[2026-09-30 19:03:24,551] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:24,563] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:24,726] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:24,727] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-EF422E9C | Name: Alice
+[2026-09-30 19:03:24,734] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:24,735] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-C9C1323B | Name: Bob
+[2026-09-30 19:03:24,740] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:24,741] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:24,916] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:24,917] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-EEB1A59B | Name: Alice
+[2026-09-30 19:03:24,923] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:24,924] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-F6E1164D | Name: Bob
+[2026-09-30 19:03:24,931] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:24,934] [INFO] [ClinicalPulseAI:analytics_engine:157] - EXPORT | CSV analytics report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-0\test_export_reports0\test_report.csv'
+[2026-09-30 19:03:24,934] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:24,936] [INFO] [ClinicalPulseAI:analytics_engine:169] - EXPORT | JSON summary report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-0\test_export_reports0\test_summary.json'
+[2026-09-30 19:03:25,105] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:25,162] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: admin | Details: Successfully logged in as Administrator
+[2026-09-30 19:03:25,336] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:25,420] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: USER_REGISTER | User: nurse_jane | Details: Registered new user with role Triage Nurse
+[2026-09-30 19:03:25,475] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_jane | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:25,640] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:25,805] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:25,860] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_FAILURE | User: admin | Details: Invalid username or password attempt.
+[2026-09-30 19:03:26,028] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:26,085] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:26,086] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: PERMISSION_DENIED | User: nurse_sarah | Details: Attempted unauthorized operation requiring [<UserRole.CLINICIAN: 'Clinician'>]
+[2026-09-30 19:03:26,241] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:26,294] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: admin | Details: Successfully logged in as Administrator
+[2026-09-30 19:03:26,457] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:26,514] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: USER_REGISTER | User: nurse_jane | Details: Registered new user with role Triage Nurse
+[2026-09-30 19:03:26,567] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_jane | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:26,735] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:26,898] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:26,951] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_FAILURE | User: admin | Details: Invalid username or password attempt.
+[2026-09-30 19:03:27,106] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:27,170] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:27,171] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: PERMISSION_DENIED | User: nurse_sarah | Details: Attempted unauthorized operation requiring [<UserRole.CLINICIAN: 'Clinician'>]
+[2026-09-30 19:03:27,320] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:27,330] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:27,392] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:27,393] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-30C66987 | Name: Alice
+[2026-09-30 19:03:27,400] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:27,400] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-3265A895 | Name: Bob
+[2026-09-30 19:03:27,405] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:27,407] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:27,585] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:27,586] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-101DDD0B | Name: Alice
+[2026-09-30 19:03:27,591] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:27,591] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-F3861883 | Name: Bob
+[2026-09-30 19:03:27,596] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:27,597] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:27,755] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:27,756] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-E6AF1313 | Name: Alice
+[2026-09-30 19:03:27,764] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:27,764] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-04DB3FF2 | Name: Bob
+[2026-09-30 19:03:27,770] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:27,772] [INFO] [ClinicalPulseAI:analytics_engine:157] - EXPORT | CSV analytics report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-1\test_export_reports0\test_report.csv'
+[2026-09-30 19:03:27,772] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:27,773] [INFO] [ClinicalPulseAI:analytics_engine:169] - EXPORT | JSON summary report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-1\test_export_reports0\test_summary.json'
+[2026-09-30 19:03:27,895] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:27,901] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 55 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:27,939] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:27,997] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: admin | Details: Successfully logged in as Administrator
+[2026-09-30 19:03:28,046] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:28,049] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-9F5254A4 | Name: John Doe
+[2026-09-30 19:03:28,162] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:28,207] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:28,209] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-7C7C4DFD | Name: Patient Mild
+[2026-09-30 19:03:28,216] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 25 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:28,217] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-767F94E8 | Name: Patient Severe
+[2026-09-30 19:03:28,220] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: USER_REGISTER | User: nurse_jane | Details: Registered new user with role Triage Nurse
+[2026-09-30 19:03:28,222] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 65 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:28,277] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_jane | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:28,385] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:28,385] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-460F42FC | Name: Alice
+[2026-09-30 19:03:28,390] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:28,391] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-F76DB0B2 | Name: Bob
+[2026-09-30 19:03:28,397] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:28,398] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:28,443] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:28,549] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:28,549] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-4F6F5096 | Name: Alice
+[2026-09-30 19:03:28,554] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:28,554] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-40AF4ED7 | Name: Bob
+[2026-09-30 19:03:28,560] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:28,562] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:28,608] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:28,664] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_FAILURE | User: admin | Details: Invalid username or password attempt.
+[2026-09-30 19:03:28,700] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:28,701] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-714A2802 | Name: Alice
+[2026-09-30 19:03:28,705] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:28,706] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-AF084E7F | Name: Bob
+[2026-09-30 19:03:28,717] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:28,720] [INFO] [ClinicalPulseAI:analytics_engine:157] - EXPORT | CSV analytics report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-0\test_export_reports1\test_report.csv'
+[2026-09-30 19:03:28,720] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:28,722] [INFO] [ClinicalPulseAI:analytics_engine:169] - EXPORT | JSON summary report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-0\test_export_reports1\test_summary.json'
+[2026-09-30 19:03:28,856] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:28,876] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:28,882] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:28,910] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:28,911] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: PERMISSION_DENIED | User: nurse_sarah | Details: Attempted unauthorized operation requiring [<UserRole.CLINICIAN: 'Clinician'>]
+[2026-09-30 19:03:29,032] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:29,038] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 55 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:29,075] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:29,129] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: admin | Details: Successfully logged in as Administrator
+[2026-09-30 19:03:29,179] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:29,182] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-1CA59EAF | Name: John Doe
+[2026-09-30 19:03:29,303] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:29,330] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:29,332] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-FFAF886E | Name: Patient Mild
+[2026-09-30 19:03:29,336] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 25 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:29,337] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-14349192 | Name: Patient Severe
+[2026-09-30 19:03:29,342] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 65 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:29,365] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: USER_REGISTER | User: nurse_jane | Details: Registered new user with role Triage Nurse
+[2026-09-30 19:03:29,429] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_jane | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:29,613] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:29,809] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:29,873] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_FAILURE | User: admin | Details: Invalid username or password attempt.
+[2026-09-30 19:03:30,065] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:30,122] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:30,122] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: PERMISSION_DENIED | User: nurse_sarah | Details: Attempted unauthorized operation requiring [<UserRole.CLINICIAN: 'Clinician'>]
+[2026-09-30 19:03:30,291] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:30,302] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:31,008] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:31,021] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 55 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:31,200] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:31,204] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-96506D6A | Name: John Doe
+[2026-09-30 19:03:31,395] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:31,397] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-4359D4D3 | Name: Patient Mild
+[2026-09-30 19:03:31,404] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 25 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:31,404] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-420EAF0A | Name: Patient Severe
+[2026-09-30 19:03:31,410] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 65 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:31,568] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:31,569] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-74AF30E6 | Name: Alice
+[2026-09-30 19:03:31,574] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:31,574] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-4F02F9DC | Name: Bob
+[2026-09-30 19:03:31,579] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:31,581] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:31,761] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:31,762] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-801DEEBE | Name: Alice
+[2026-09-30 19:03:31,768] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:31,769] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-4191D5F0 | Name: Bob
+[2026-09-30 19:03:31,776] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:31,779] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:31,967] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:31,968] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-B4D75B60 | Name: Alice
+[2026-09-30 19:03:31,972] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:31,973] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-D3941A38 | Name: Bob
+[2026-09-30 19:03:31,981] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:31,984] [INFO] [ClinicalPulseAI:analytics_engine:157] - EXPORT | CSV analytics report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-1\test_export_reports1\test_report.csv'
+[2026-09-30 19:03:31,984] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:31,985] [INFO] [ClinicalPulseAI:analytics_engine:169] - EXPORT | JSON summary report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-1\test_export_reports1\test_summary.json'
+[2026-09-30 19:03:32,169] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:32,175] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:32,352] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:32,359] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 55 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:32,539] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:32,545] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-6ABABC49 | Name: John Doe
+[2026-09-30 19:03:32,717] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:32,718] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-FB99FCC9 | Name: Patient Mild
+[2026-09-30 19:03:32,724] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 25 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:32,724] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-F29ABC47 | Name: Patient Severe
+[2026-09-30 19:03:32,728] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 65 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:53,584] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:53,585] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-C30BA351 | Name: Alice
+[2026-09-30 19:03:53,593] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:53,593] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-C119032D | Name: Bob
+[2026-09-30 19:03:53,600] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:53,601] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:53,772] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:53,772] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-2FD7A583 | Name: Alice
+[2026-09-30 19:03:53,779] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:53,780] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-D214721A | Name: Bob
+[2026-09-30 19:03:53,786] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:53,787] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:53,983] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:53,984] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-C479482F | Name: Alice
+[2026-09-30 19:03:53,992] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:53,993] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-A7A1B97C | Name: Bob
+[2026-09-30 19:03:53,999] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:54,003] [INFO] [ClinicalPulseAI:analytics_engine:157] - EXPORT | CSV analytics report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-2\test_export_reports0\test_report.csv'
+[2026-09-30 19:03:54,004] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:03:54,005] [INFO] [ClinicalPulseAI:analytics_engine:169] - EXPORT | JSON summary report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-2\test_export_reports0\test_summary.json'
+[2026-09-30 19:03:54,197] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:54,253] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: admin | Details: Successfully logged in as Administrator
+[2026-09-30 19:03:54,428] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:54,488] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: USER_REGISTER | User: nurse_jane | Details: Registered new user with role Triage Nurse
+[2026-09-30 19:03:54,540] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_jane | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:54,717] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:54,914] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:54,980] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_FAILURE | User: admin | Details: Invalid username or password attempt.
+[2026-09-30 19:03:55,139] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:55,201] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:55,202] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: PERMISSION_DENIED | User: nurse_sarah | Details: Attempted unauthorized operation requiring [<UserRole.CLINICIAN: 'Clinician'>]
+[2026-09-30 19:03:55,367] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:03:55,555] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:55,609] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:03:55,610] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-1B1BC28A | Name: Emergency Test Patient
+[2026-09-30 19:03:55,615] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 68 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:55,674] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: dr_smith | Details: Successfully logged in as Clinician
+[2026-09-30 19:03:55,675] [INFO] [ClinicalPulseAI:patient_manager:92] - STATUS_CHANGE | Patient: PAT-1B1BC28A -> Status: In Treatment
+[2026-09-30 19:03:55,675] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 1 | Critical: 1 | Avg Risk: 100.00
+[2026-09-30 19:03:55,854] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:55,864] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:56,590] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:56,596] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 55 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:03:56,759] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:56,762] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-E767FA70 | Name: John Doe
+[2026-09-30 19:03:56,941] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:03:56,943] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-F1E35FFA | Name: Patient Mild
+[2026-09-30 19:03:56,950] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 25 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:03:56,951] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-6E580FD6 | Name: Patient Severe
+[2026-09-30 19:03:56,956] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 65 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:04:12,121] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:12,122] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-6710951C | Name: Alice
+[2026-09-30 19:04:12,129] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:04:12,129] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-DB1B5636 | Name: Bob
+[2026-09-30 19:04:12,138] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:04:12,139] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:04:12,296] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:12,300] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-E003F24B | Name: Alice
+[2026-09-30 19:04:12,306] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:04:12,306] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-033A3427 | Name: Bob
+[2026-09-30 19:04:12,312] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:04:12,313] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:04:12,504] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:12,505] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-B8D1E88C | Name: Alice
+[2026-09-30 19:04:12,511] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:04:12,511] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-A836525D | Name: Bob
+[2026-09-30 19:04:12,516] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 60 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:04:12,519] [INFO] [ClinicalPulseAI:analytics_engine:157] - EXPORT | CSV analytics report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-3\test_export_reports0\test_report.csv'
+[2026-09-30 19:04:12,519] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 2 | Critical: 1 | Avg Risk: 77.50
+[2026-09-30 19:04:12,520] [INFO] [ClinicalPulseAI:analytics_engine:169] - EXPORT | JSON summary report written to 'C:\Users\chait\AppData\Local\Temp\pytest-of-chait\pytest-3\test_export_reports0\test_summary.json'
+[2026-09-30 19:04:12,687] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:04:12,746] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: admin | Details: Successfully logged in as Administrator
+[2026-09-30 19:04:12,934] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:04:12,996] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: USER_REGISTER | User: nurse_jane | Details: Registered new user with role Triage Nurse
+[2026-09-30 19:04:13,056] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_jane | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:04:13,266] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:04:13,453] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:04:13,519] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_FAILURE | User: admin | Details: Invalid username or password attempt.
+[2026-09-30 19:04:13,714] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:04:13,788] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:04:13,788] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: PERMISSION_DENIED | User: nurse_sarah | Details: Attempted unauthorized operation requiring [<UserRole.CLINICIAN: 'Clinician'>]
+[2026-09-30 19:04:13,970] [INFO] [ClinicalPulseAI:auth_manager:32] - Default system users successfully initialized.
+[2026-09-30 19:04:14,123] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:14,180] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: nurse_sarah | Details: Successfully logged in as Triage Nurse
+[2026-09-30 19:04:14,181] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-3D163B64 | Name: Emergency Test Patient
+[2026-09-30 19:04:14,190] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 68 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:04:14,247] [INFO] [ClinicalPulseAI:logger:43] - AUDIT | Event: AUTH_SUCCESS | User: dr_smith | Details: Successfully logged in as Clinician
+[2026-09-30 19:04:14,248] [INFO] [ClinicalPulseAI:patient_manager:92] - STATUS_CHANGE | Patient: PAT-3D163B64 -> Status: In Treatment
+[2026-09-30 19:04:14,248] [INFO] [ClinicalPulseAI:analytics_engine:78] - ANALYTICS | Total: 1 | Critical: 1 | Avg Risk: 100.00
+[2026-09-30 19:04:14,430] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:14,440] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 30 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:04:14,608] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:14,615] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 55 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
+[2026-09-30 19:04:14,789] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:14,793] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-E6EAC6AD | Name: John Doe
+[2026-09-30 19:04:14,978] [INFO] [ClinicalPulseAI:ml_triage_engine:78] - ML Triage Random Forest model successfully trained and validated.
+[2026-09-30 19:04:14,979] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-09D60063 | Name: Patient Mild
+[2026-09-30 19:04:14,988] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 25 | Urgency: CATEGORY_3_URGENT | Composite Score: 55.00
+[2026-09-30 19:04:14,988] [INFO] [ClinicalPulseAI:patient_manager:51] - PATIENT_CREATED | ID: PAT-50E326BE | Name: Patient Severe
+[2026-09-30 19:04:14,995] [INFO] [ClinicalPulseAI:ml_triage_engine:178] - PREDICT | Patient Age: 65 | Urgency: CATEGORY_1_RESUSCITATION | Composite Score: 100.00
